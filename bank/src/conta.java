@@ -54,4 +54,7 @@ public class conta {
     System.out.println("Saldo atual: " + saldo);
   }
 
+  public int getNumero() {
+    return numero;
+  }
 }
