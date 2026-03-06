@@ -12,4 +12,9 @@ public class conta {
     this.numero = numero;
     this.cliente = cliente;
   }
+
+  public void depositar(double valor) {
+    saldo += valor;
+    historico.add(new transacao("Deposito", valor));
+  }
 }
