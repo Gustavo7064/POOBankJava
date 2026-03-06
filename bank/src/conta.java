@@ -28,4 +28,17 @@ public class conta {
     saldo -= valor;
     historico.add(new transacao("Saque", valor));
   }
+
+  public void transferir(conta destino, double valor) {
+
+    if (valor > saldo) {
+      System.out.println("Saldo insuficiente");
+      return;
+    }
+
+    saldo -= valor;
+    destino.depositar(valor);
+
+    historico.add(new transacao("Transferencia enviada", valor));
+  }
 }
