@@ -7,4 +7,9 @@ public class conta {
   protected double saldo;
 
   protected ArrayList<transacao> historico = new ArrayList<>();
+
+  public conta(int numero, cliente cliente) {
+    this.numero = numero;
+    this.cliente = cliente;
+  }
 }
