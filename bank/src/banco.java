@@ -12,4 +12,15 @@ public class banco {
   public void adicionarConta(conta conta) {
     contas.add(conta);
   }
+
+  public conta buscarConta(int numero) {
+
+    for (conta c : contas) {
+      if (c.getNumero() == numero) {
+        return c;
+      }
+    }
+
+    return null;
+  }
 }
