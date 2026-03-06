@@ -17,4 +17,15 @@ public class conta {
     saldo += valor;
     historico.add(new transacao("Deposito", valor));
   }
+
+  public void sacar(double valor) {
+
+    if (valor > saldo) {
+      System.out.println("Saldo insuficiente");
+      return;
+    }
+
+    saldo -= valor;
+    historico.add(new transacao("Saque", valor));
+  }
 }
