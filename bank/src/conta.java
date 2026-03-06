@@ -41,4 +41,17 @@ public class conta {
 
     historico.add(new transacao("Transferencia enviada", valor));
   }
+
+  public void extrato() {
+
+    System.out.println("Conta: " + numero);
+    System.out.println("Titular: " + cliente.getNome());
+
+    for (transacao t : historico) {
+      System.out.println(t.getTipo() + " - " + t.getValor());
+    }
+
+    System.out.println("Saldo atual: " + saldo);
+  }
+
 }
