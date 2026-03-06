@@ -8,4 +8,8 @@ public class banco {
   public banco(String nome) {
     this.nome = nome;
   }
+
+  public void adicionarConta(conta conta) {
+    contas.add(conta);
+  }
 }
