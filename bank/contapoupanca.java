@@ -6,4 +6,8 @@ public class ContaPoupanca extends Conta {
     this.rendimento = rendimento;
   }
 
+  public void aplicarRendimento() {
+    saldo += saldo * rendimento;
+  }
+
 }
