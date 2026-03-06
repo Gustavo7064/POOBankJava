@@ -23,4 +23,11 @@ public class banco {
 
     return null;
   }
+
+  public void listarContas() {
+
+    for (conta c : contas) {
+      System.out.println("Conta: " + c.getNumero());
+    }
+  }
 }
